@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.valid {
+    border-color: green;
+}
+
+.invalid {
+    border-color: red;
+}
+
+/* Profile Creation Form Styles */
+.profile-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.profile-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic input {
+    display: none;
+}
+
+.profile-pic label {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-pic label:hover {
+    background-color: #0056b3;
+}
+
+.profile-pic img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-top: 10px;
+    border: 4px solid #007bff;
+}
+
+/* Input Field Styles */
+.input-field {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.input-field input,
+.input-field select {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-field input:focus,
+.input-field select:focus {
+    border-color: #007bff;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+}
+
+/* Save Button Styles */
+.btn-save {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-save:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    resize: vertical; /* Allow vertical resize only */
+  }
+  
+  label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+
+
+/* Profile Display Section Styles */
+.profile-display {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    margin-top: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.profile-display h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic-display img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 4px solid #007bff;
+}
+
+.profile-details-display {
+    width: 100%;
+}
+
+.profile-details-display p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.profile-details-display strong {
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-form, .profile-display {
+        padding: 30px;
+    }
+
+    .profile-pic img, .profile-pic-display img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-form h2, .profile-display h2 {
+        font-size: 24px;
+    }
+
+    .input-field input,
+    .input-field select {
+        font-size: 14px;
+    }
+
+    .btn-save {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .profile-details-display p {
+        font-size: 16px;
+    }
+}
