@@ -9,7 +9,7 @@ Online Profile Creator is a web application that helps users build and manage pr
 - **Customizable Sections:** Users can add their education, skills, and experience.
 - **Profile Formats:** Save profiles in HTML or PDF formats.
 - **Profile Photo Upload:** Upload a circular profile photo for a professional look.
-
+- 
 ## Technologies Used
 - HTML, CSS, JavaScript for front-end development
 - [Any back-end technology you are using] (e.g., Node.js, Python Flask)
